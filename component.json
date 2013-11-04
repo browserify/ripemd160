@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "description": "Compute RIPEMD160 of bytes or strings.",
+  "name": "ripemd160",
+  "keywords": [
+    "string",
+    "strings",
+    "ripemd160",
+    "bytes",
+    "cryptography",
+    "bitcoin"
+  ],
+  "repo": "cryptocoinjs/ripemd160",
+  "scripts": [
+    "lib/ripemd160.js"
+  ],
+  "main": "lib/ripemd160.js",
+  "dependencies": {
+    "cryptocoinjs/convert-hex": "0.0.x",
+    "cryptocoinjs/convert-string": "0.0.x"
+  },
+}
