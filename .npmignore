@@ -2,3 +2,5 @@
 test/
 .DS_Store
 references/
+component.json
+bower.json

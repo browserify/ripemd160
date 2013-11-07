@@ -13,7 +13,9 @@
   "ignore": [
     "node_modules",
     ".DS_Store",
-    "references"
+    "references",
+    "component.json",
+    "packabe.json"
   ],
   "dependencies": {
     "cryptocoin-convert-hex": "0.0.x",
