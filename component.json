@@ -18,5 +18,5 @@
   "dependencies": {
     "cryptocoinjs/convert-hex": "0.0.x",
     "cryptocoinjs/convert-string": "0.0.x"
-  },
+  }
 }
