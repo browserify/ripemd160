@@ -17,7 +17,7 @@
     "url": "https://github.com/cryptocoinjs/ripemd160",
     "type": "git"
   },
-  "main": "lib/ripemd160.js",
+  "main": "./lib/ripemd160.js",
   "dependencies": {
     "cryptocoin-convert-hex": "0.0.1",
     "cryptocoin-convert-string": "0.0.1"

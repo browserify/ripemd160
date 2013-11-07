@@ -12,9 +12,9 @@
   ],
   "repo": "cryptocoinjs/ripemd160",
   "scripts": [
-    "lib/ripemd160.js"
+    "./lib/ripemd160.js"
   ],
-  "main": "lib/ripemd160.js",
+  "main": "./lib/ripemd160.js",
   "dependencies": {
     "cryptocoinjs/convert-hex": "0.0.x",
     "cryptocoinjs/convert-string": "0.0.x"

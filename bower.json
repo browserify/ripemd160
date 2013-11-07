@@ -22,5 +22,5 @@
     "cryptocoin-convert-string": "0.0.x"
   },
   "repo": "https://github.com/cryptocoinjs/ripemd160",
-  "main": "lib/ripemd160.js"
+  "main": "./lib/ripemd160.js"
 }
