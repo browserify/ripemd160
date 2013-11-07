@@ -1,7 +1,7 @@
 {
-  "version": "0.0.1",
-  "description": "Compute RIPEMD160 of bytes or strings.",
   "name": "ripemd160",
+  "version": "0.0.2",
+  "description": "Compute RIPEMD160 of bytes or strings.",
   "keywords": [
     "string",
     "strings",
