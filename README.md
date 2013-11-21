@@ -3,15 +3,13 @@ ripemd160
 
 JavaScript component to compute the RIPEMD160 hash of strings or bytes.
 
-AMD/CommonJS compatible.
-
 
 Install
 -------
 
 ### Node.js/Browserify
 
-    npm install --save cryptocoin-ripemd160
+    npm install --save ripemd160
 
 ### Component
 
@@ -20,7 +18,7 @@ Install
 
 ### Bower
 
-    bower install cryptocoin-ripemd160
+    bower install ripemd160
 
 
 ### Script

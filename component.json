@@ -16,7 +16,7 @@
   ],
   "main": "./lib/ripemd160.js",
   "dependencies": {
-    "cryptocoinjs/convert-hex": "0.0.x",
-    "cryptocoinjs/convert-string": "0.0.x"
+    "cryptocoinjs/convert-hex": "0.1.x",
+    "cryptocoinjs/convert-string": "0.1.x"
   }
 }
