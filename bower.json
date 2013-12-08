@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "convert-hex": "0.1.x",
-    "onvert-string": "0.1.x"
+    "convert-string": "0.1.x"
   },
   "repo": "https://github.com/cryptocoinjs/ripemd160",
   "main": "./lib/ripemd160.js"
