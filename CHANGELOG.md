@@ -2,6 +2,7 @@
 ------------------
 * removed bower.json and component.json
 * changed 4 spacing to 2
+* returns `Buffer` type now, input must be Array, Uint8Array, or Buffer
 
 0.1.0 / 2013-11-20
 ------------------
