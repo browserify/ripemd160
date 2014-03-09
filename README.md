@@ -11,32 +11,16 @@ Install
 
     npm install --save ripemd160
 
-### Component
-
-    component install cryptocoinjs/ripemd160
-
-
-### Bower
-
-    bower install ripemd160
-
-
-### Script
-
-```html
-<script src="/path/to/ripemd160.js"></script>
-```
-
 
 Usage
 -----
 
 ### ripemd160(input)
 
-input either an array of bytes or a string
+Input either a string or `Buffer`. Output is a `Buffer`.
 
 ```js
-ripemd160("hello") //"108f07b8382412612c048d07d13f814118445acd"
+console.log(ripemd160("hello").toString('hex')) // => 108f07b8382412612c048d07d13f814118445acd"
 ```
 
 
