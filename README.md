@@ -32,10 +32,5 @@ Most of the code from CryptoJS https://code.google.com/p/crypto-js/
 
 
 
-License
--------
 
-(MIT License)
-
-Copyright 2013, JP Richardson  <jprichardson@gmail.com>
 
