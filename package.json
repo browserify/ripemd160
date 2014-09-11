@@ -11,6 +11,7 @@
     "bytes",
     "cryptography"
   ],
+  "license": "BSD-3",
   "devDependencies": {
     "mocha": "~1.17.1",
     "terst": "~0.1.0",
