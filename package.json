@@ -14,8 +14,8 @@
   "license": "BSD-3",
   "devDependencies": {
     "mocha": "~1.17.1",
-    "terst": "~0.1.0",
-    "mochify": "~0.4.2"
+    "mochify": "^2.1.0",
+    "terst": "~0.1.0"
   },
   "repository": {
     "url": "https://github.com/cryptocoinjs/ripemd160",
