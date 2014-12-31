@@ -22,5 +22,9 @@
     "type": "git"
   },
   "main": "./lib/ripemd160.js",
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "test": "mocha test",
+    "browser-test": "mochify --wd -R spec"
+  }
 }
