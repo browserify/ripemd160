@@ -1,3 +1,9 @@
+0.2.1 / 2014-12-31
+------------------
+- made license clear in `package.json`
+- deleted `Makefile`, moved targets to `package.json`
+- removed `terst` for `assert`
+
 0.2.0 / 2014-03-09
 ------------------
 * removed bower.json and component.json
