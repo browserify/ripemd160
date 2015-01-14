@@ -1,8 +1,6 @@
 var assert = require('assert')
 var ripemd160 = require('../lib/ripemd160')
 
-require('terst')
-
 describe('+ ripemd160(input)', function() {
   describe('> when input is a string', function() {
     it('should compute the ripemd160 hash', function() {
