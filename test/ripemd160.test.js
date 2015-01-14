@@ -1,18 +1,25 @@
 var assert = require('assert')
-var ripemd160 = require('../lib/ripemd160')
+var ripemd160 = require('../')
 
-describe('+ ripemd160(input)', function() {
-  describe('> when input is a string', function() {
-    it('should compute the ripemd160 hash', function() {
-      var input = "hello";
-      assert.equal(ripemd160(input).toString('hex'), "108f07b8382412612c048d07d13f814118445acd")
-    })
-  })
+// from http://homes.esat.kuleuven.be/~bosselae/ripemd160.html
+var fixtures = require('./fixtures')
 
-  describe('> when input is a buffer', function() {
-    it('should compute the ripemd160 hash', function() {
-      var input = new Buffer("hello");
-      assert.equal(ripemd160(input).toString('hex'), "108f07b8382412612c048d07d13f814118445acd")
+describe('ripemd160(input)', function() {
+  fixtures.valid.forEach(function(f) {
+    if (f.encoding === 'utf8') {
+      describe('> when input (' + f.data + ') encoding is utf8', function() {
+        it('should accept a native string and produce a result', function() {
+          var result = ripemd160(f.data)
+          assert.equal(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+        })
+      })
+    }
+
+    describe('> when input ('+ (new Buffer(f.data, f.encoding)).toString('hex') + ' )is any encoding', function() {
+      it('should accept a buffer and produce a result', function() {
+        var result = ripemd160(new Buffer(f.data, f.encoding))
+        assert.equal(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+      })
     })
   })
 })
