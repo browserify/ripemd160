@@ -1,3 +1,10 @@
+1.0.0 / 2015-01-14
+------------------
+- updated dev deps
+- added more test fixtures
+- updated readme with usage, testing, etc
+- moved from https://github.com/cryptocoinjs/ripemd160 to https://github.com/crypto-browserify/ripemd160
+
 0.2.1 / 2014-12-31
 ------------------
 - made license clear in `package.json`
