@@ -71,6 +71,29 @@ var arr = [].slice.call(buf)
 ```
 
 
+Testing
+-------
+
+### Install dev deps:
+
+    npm install --development
+
+### Test in Node.js:
+
+    npm run test
+
+### Test in a Browser:
+
+Testing in the browser uses the excellent [Mochify](https://github.com/mantoni/mochify.js). Mochify can use either PhantomJS 
+or an actual browser. You must have Selenium installed if you want to use an actual browser. The easiest way is to 
+`npm install -g start-selenium` and then run `start-selenium`.
+
+Then run:
+
+    npm run browser-test
+
+
+
 License
 -------
 
