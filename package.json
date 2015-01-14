@@ -13,8 +13,8 @@
   ],
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "mocha": "~1.17.1",
-    "mochify": "^2.1.0"
+    "mocha": "^2.1.0",
+    "mochify": "^2.1.1"
   },
   "repository": {
     "url": "https://github.com/cryptocoinjs/ripemd160",
