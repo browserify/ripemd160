@@ -1,19 +1,77 @@
 ripemd160
 =========
 
-JavaScript component to compute the RIPEMD160 hash of strings or bytes.
+JavaScript component to compute the RIPEMD-160 hash of strings or bytes. This hash is commonly used in crypto currencies
+like Bitcoin.
+
+Usage
+-----
+
+### Install
+
+    npm install --save ripemd160
 
 
-Official Documentation
-----------------------
+### ripemd160(input)
 
-http://cryptocoinjs.com/modules/crypto/ripemd160/
+`input` should be either a `string`, `Buffer`, or an `Array`. It returns a `Buffer`. 
+
+**example 1**:
+
+```js
+var ripemd16 = require('ripemd160')
+
+var data = 'hello'
+var result = ripemd160(data)
+console.log(result.toString('hex'))
+// => 108f07b8382412612c048d07d13f814118445acd
+```
+
+** example 2**:
+
+```js
+var ripemd16 = require('ripemd160')
+
+var data = new Buffer('hello', 'utf8')
+var result = ripemd160(data)
+console.log(result.toString('hex'))
+// => 108f07b8382412612c048d07d13f814118445acd
+```
 
 
+#### converting Buffers
 
-Credits / License
------------------
+If you're not familiar with the Node.js ecosystem, type `Buffer` is a common way that a developer can pass around
+binary data. `Buffer` also exists in the [Browserify](http://browserify.org/) environment. Converting to and from Buffers is very easy.
 
-Most of the code from CryptoJS https://code.google.com/p/crypto-js/
+##### to buffer
 
-Licensed: BSD3
+```js
+// from string
+var buf = new Buffer('some string', 'utf8')
+
+// from hex string
+var buf = new Buffer('3f5a4c22', 'hex')
+
+// from array
+var buf = new Buffer([1, 2, 3, 4])
+```
+
+#### from buffer
+
+```js
+// to string
+var str = buf.toString('utf8')
+
+// to hex string
+var hex = buf.toString('hex')
+
+// to array
+var arr = [].slice.call(buf)
+```
+
+
+License
+-------
+
+Licensed: BSD3-Clause
