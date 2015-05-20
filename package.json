@@ -24,7 +24,7 @@
   "main": "./lib/ripemd160.js",
   "dependencies": {},
   "scripts": {
-    "test": "mocha test",
+    "test": "standard && mocha test",
     "browser-test": "mochify --wd -R spec"
   }
 }
