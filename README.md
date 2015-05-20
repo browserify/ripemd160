@@ -1,6 +1,8 @@
 ripemd160
 =========
 
+[![build status](https://secure.travis-ci.org/crypto-browserify/ripemd160.png)](http://travis-ci.org/jprichardson/crypto-browserify/ripemd160)
+
 JavaScript component to compute the RIPEMD-160 hash of strings or bytes. This hash is commonly used in crypto currencies
 like Bitcoin.
 
