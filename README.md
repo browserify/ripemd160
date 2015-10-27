@@ -99,4 +99,4 @@ Then run:
 License
 -------
 
-Licensed: BSD3-Clause
+Licensed: MIT License
