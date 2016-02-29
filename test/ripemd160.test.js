@@ -1,38 +1,47 @@
-var assert = require('assert')
+var tap = require('tap')
 var ripemd160 = require('../')
 
 // from http://homes.esat.kuleuven.be/~bosselae/ripemd160.html
 var fixtures = require('./fixtures')
 
-/* global describe, it */
-
-describe('ripemd160(input)', function () {
+tap.test('ripemd160(input)', function (t) {
   fixtures.valid.forEach(function (f) {
     if (typeof f.data === 'string') {
       if (f.encoding === 'utf8') {
-        describe('> when input (' + f.data + ') encoding is utf8', function () {
-          it('should accept a native string and produce a result', function () {
+        t.test('> when input (' + f.data + ') encoding is utf8', function (t) {
+          t.test('should accept a native string and produce a result', function (t) {
             var result = ripemd160(f.data)
-            assert.equal(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+            t.same(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+            t.end()
           })
+
+          t.end()
         })
       }
 
-      describe('> when input (' + (new Buffer(f.data, f.encoding)).toString('hex') + ')is any encoding', function () {
-        it('should accept a buffer and produce a result', function () {
+      t.test('> when input (' + (new Buffer(f.data, f.encoding)).toString('hex') + ')is any encoding', function (t) {
+        t.test('should accept a buffer and produce a result', function (t) {
           var result = ripemd160(new Buffer(f.data, f.encoding))
-          assert.equal(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+          t.same(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+          t.end()
         })
+
+        t.end()
       })
     }
 
     if (Array.isArray(f.data)) {
-      describe('> when input (' + (new Buffer(f.data)).toString('hex') + ') is an array', function () {
-        it('should accept a buffer and produce a result', function () {
+      t.test('> when input (' + (new Buffer(f.data)).toString('hex') + ') is an array', function (t) {
+        t.test('should accept a buffer and produce a result', function (t) {
           var result = ripemd160(f.data)
-          assert.equal(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+          t.same(result.toString('hex'), (new Buffer(f.result, 'hex')).toString('hex'))
+          t.end()
         })
+
+        t.end()
       })
     }
   })
+
+  t.end()
 })
