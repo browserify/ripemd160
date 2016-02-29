@@ -20,7 +20,10 @@
     "url": "https://github.com/crypto-browserify/ripemd160",
     "type": "git"
   },
-  "main": "./lib/ripemd160.js",
+  "main": "./index",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {},
   "scripts": {
     "lint": "standard",
