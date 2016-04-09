@@ -1,7 +1,10 @@
 ripemd160
 =========
 
-[![build status](https://secure.travis-ci.org/crypto-browserify/ripemd160.png)](http://travis-ci.org/crypto-browserify/ripemd160)
+[![NPM Package](https://img.shields.io/npm/v/ripemd160.svg?style=flat-square)](https://www.npmjs.org/package/ripemd160)
+[![Build Status](https://img.shields.io/travis/crypto-browserify/ripemd160.svg?branch=master&style=flat-square)](https://travis-ci.org/crypto-browserify/ripemd160)
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 JavaScript component to compute the RIPEMD-160 hash of strings or bytes. This hash is commonly used in crypto currencies
 like Bitcoin.
@@ -71,30 +74,6 @@ var hex = buf.toString('hex')
 // to array
 var arr = [].slice.call(buf)
 ```
-
-
-Testing
--------
-
-### Install dev deps:
-
-    npm install --development
-
-### Test in Node.js:
-
-    npm run test
-
-### Test in a Browser:
-
-Testing in the browser uses the excellent [Mochify](https://github.com/mantoni/mochify.js). Mochify can use either PhantomJS
-or an actual browser. You must have Selenium installed if you want to use an actual browser. The easiest way is to
-`npm install -g start-selenium` and then run `start-selenium`.
-
-Then run:
-
-    npm run browser-test
-
-
 
 License
 -------
