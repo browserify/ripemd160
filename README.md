@@ -78,4 +78,4 @@ var arr = [].slice.call(buf)
 License
 -------
 
-Licensed: BSD3-Clause
+Licensed: MIT License
