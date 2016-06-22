@@ -1,3 +1,7 @@
+2.0.1 / 2016-06-22
+------------------
+- added LICENSE file.
+
 2.0.0 / 2016-04-11
 ------------------
 - rewritten, license change BSD-3 to MIT. [#13][#13]
