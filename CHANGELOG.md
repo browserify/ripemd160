@@ -1,3 +1,24 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [v2.0.2](https://github.com/browserify/ripemd160/compare/2.0.1...v2.0.2) - 2018-04-19
+
+### Merged
+
+- Don't use the deprecated Buffer() constructor [`#20`](https://github.com/browserify/ripemd160/pull/20)
+- code optimization (30%) [`#14`](https://github.com/browserify/ripemd160/pull/14)
+- Not a markdown file [`#18`](https://github.com/browserify/ripemd160/pull/18)
+
+### Commits
+
+- Explicitly require 'buffer' [`651ae24`](https://github.com/browserify/ripemd160/commit/651ae24445a9486fdea1707e45309b28fee35cfa)
+
+<!-- auto-changelog-above -->
+
 2.0.1 / 2016-06-22
 ------------------
 - added LICENSE file.
