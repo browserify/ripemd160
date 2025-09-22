@@ -28,8 +28,8 @@
 		"posttest": "npx npm@\">= 10.2\" audit --production"
 	},
 	"dependencies": {
-		"hash-base": "^3.0.0",
-		"inherits": "^2.0.1"
+		"hash-base": "^3.1.2",
+		"inherits": "^2.0.4"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.2.0",
