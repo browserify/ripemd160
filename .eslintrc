@@ -1,0 +1,15 @@
+{
+	"root": true,
+
+	"extends": "@ljharb",
+
+	"rules": {
+		"array-bracket-newline": "off",
+		"array-element-newline": "off",
+		"func-style": ["error", "declaration"],
+		"max-lines-per-function": "off",
+		"max-params": "off",
+		"max-statements": "off",
+		"no-underscore-dangle": "off",
+	},
+}
