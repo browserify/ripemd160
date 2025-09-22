@@ -22,8 +22,10 @@
   },
   "scripts": {
     "lint": "standard",
-    "test": "npm run lint && npm run unit",
-    "unit": "node test/*.js"
+    "pretest": "npm run lint",
+    "test": "npm run tests-only",
+    "tests-only": "node test/*.js",
+    "posttest": "npx npm@\">= 10.2\" audit --production"
   },
   "dependencies": {
     "hash-base": "^3.0.0",
