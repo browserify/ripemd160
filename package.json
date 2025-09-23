@@ -57,5 +57,8 @@
 			".nycrc",
 			"test"
 		]
+	},
+	"engines": {
+		"node": ">= 0.8"
 	}
 }
